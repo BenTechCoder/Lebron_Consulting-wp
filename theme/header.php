@@ -19,13 +19,13 @@
 	<?php wp_head(); ?>
 </head>
 
-<body class="overflow-x-hidden" ?php body_class(); ?>
+<body ?php body_class(); ?>
 
 <?php wp_body_open(); ?>
 
-<div id="page">
+<div id="page" class="overflow-x-hidden flex flex-col min-h-screen">
 	<a href="#content" class="sr-only"><?php esc_html_e( 'Skip to content', 'Lebron_Consulting' ); ?></a>
 
 	<?php get_template_part( 'template-parts/layout/header', 'content' ); ?>
 
-	<div id="content">
+	<div id="content" class="grow">

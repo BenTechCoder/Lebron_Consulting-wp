@@ -25,9 +25,7 @@
 	<div <?php _test_1_content_class( 'entry-content' ); ?>>
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php _test_1_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	
+	<!-- .entry-footer -->
 
 </article><!-- #post-${ID} -->

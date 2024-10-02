@@ -9,7 +9,7 @@
 
 ?>
 
-<footer class="center | py-10 bg-dark text-light" id="colophon">
+<footer class="py-10 bg-dark text-light" id="colophon">
 
 	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<aside role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'Lebron_Consulting' ); ?>">
@@ -31,7 +31,7 @@
 		</nav>
 	<?php endif; ?>
 
-	<div>
+	<div class="center">
 		<?php
 		$_test_1_blog_info = get_bloginfo( 'name' );
 		if ( ! empty( $_test_1_blog_info ) ) :
