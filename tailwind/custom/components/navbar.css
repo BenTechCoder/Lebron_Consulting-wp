@@ -1,0 +1,29 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	border-radius: 0.5rem;
+	border-bottom: 5px solid theme(colors.primary);
+}
+
+/* TODO: ADD HOVER TO NAVBAR LINKS */
+/* TODO: ADD Mobile TO NAVBAR */
+
+.navbar ul {
+	display: flex;
+	gap: 1.5em;
+}
+
+.navbar li {
+	text-decoration: underline;
+	text-underline-offset: 0.4em;
+	font-family: theme(fontFamily.display);
+}
+
+.navbar img {
+	height: 4.5rem;
+}

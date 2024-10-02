@@ -1,0 +1,41 @@
+
+.reel {
+    display: flex;
+    block-size: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-color: theme(colors.dark) theme(colors.primary);
+  }
+  
+  .reel::-webkit-scrollbar {
+    block-size: 1rem;
+  }
+  
+  .reel::-webkit-scrollbar-track {
+    background-color: theme(colors.primary);
+  }
+  
+  .reel::-webkit-scrollbar-thumb {
+    background-color: theme(colors.primary);
+    background-image: linear-gradient(theme(colors.primary) 0, theme(colors.primary) 0.25rem, theme(colors.dark) 0.25rem, theme(colors.dark) 0.75rem, theme(colors.primary) 0.75rem);
+  }
+  
+  .reel > * {
+    flex: 0 0 90vw;
+  }
+  
+  
+  .reel > img {
+    block-size: 100%;
+    flex-basis: auto;
+    width: auto;
+  }
+  
+  .reel > * + * {
+    margin-inline-start: 4em;
+    margin-inline-end: 2em;
+  }
+  
+  .reel.overflowing {
+    padding-block-end: 2em;
+  }

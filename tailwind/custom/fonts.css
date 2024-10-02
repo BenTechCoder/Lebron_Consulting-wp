@@ -1,0 +1,26 @@
+/**
+ * Custom `@font-face` rules
+ *
+ * These will be added immediately before Tailwind’s `base` layer.
+ */
+
+@font-face {
+	font-family: Open-Sans;
+	font-style: normal;
+	font-display: swap;
+	src:
+		local(""),
+		url("fonts/opensans-regular-webfont.woff2") format("woff2"),
+		url("fonts/opensans-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+	font-family: Redhat;
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src:
+		local(""),
+		url("fonts/red-hat-display-v7-latin-900.woff2") format("woff2"),
+		url("fonts/red-hat-display-v7-latin-900.woff") format("woff");
+}

@@ -1,0 +1,149 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `base` layer
+ *
+ * “Add things like base typography styles [or] opinionated global resets.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-base-styles
+ */
+
+/**
+ * This uses the background and foreground colors declared in the
+ * `theme.json` file and is applied both to the frontend and in the block
+ * editor.
+*/
+body {
+	@apply bg-light text-dark font-body;
+	font-size: var(--size-step-0);
+}
+
+/* @link https://utopia.fyi/type/calculator?c=320,14,1.2,1350,16,1.333,8,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+	--size-step--1: clamp(0.7292rem, 0.7226rem + 0.0327vw, 0.7502rem);
+	--size-step-0: clamp(0.875rem, 0.8362rem + 0.1942vw, 1rem);
+	--size-step-1: clamp(1.05rem, 0.9621rem + 0.4396vw, 1.333rem);
+	--size-step-2: clamp(1.26rem, 1.0994rem + 0.8029vw, 1.7769rem);
+	--size-step-3: clamp(1.512rem, 1.2459rem + 1.3306vw, 2.3686rem);
+	--size-step-4: clamp(1.8144rem, 1.3972rem + 2.0861vw, 3.1573rem);
+	--size-step-5: clamp(2.1773rem, 1.5462rem + 3.1556vw, 4.2087rem);
+	--size-step-6: clamp(2.6127rem, 1.6815rem + 4.6563vw, 5.6102rem);
+	--size-step-7: clamp(3.1353rem, 1.786rem + 6.7467vw, 7.4784rem);
+	--size-step-8: clamp(3.7623rem, 1.8341rem + 9.641vw, 9.9688rem);
+  }
+
+h1 {
+	font-size: var(--size-step-5);
+}
+
+h2 {
+	font-size: var(--size-step-4);
+}
+
+h3 {
+	font-size: var(--size-step-3);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	max-inline-size: 25ch;
+	@apply font-display;
+}
+
+/* Set line lengths */
+p,
+li,
+blockquote:not([class]) {
+	max-inline-size: 65ch;
+}
+
+* .text-center > p,
+li,
+blockquote:not([class]) {
+	max-inline-size: none;
+}
+
+blockquote {
+	border-inline-start: 0.5rem solid var(--color-primary);
+	padding: var(--space-m-l);
+	font-size: var(--size-step-2);
+}
+
+blockquote > * + * {
+	margin-block-start: var(--space-m-l);
+}
+
+blockquote :last-child {
+	font-family: var(--font-base);
+	font-style: normal;
+	font-size: var(--size-step-1);
+}
+
+svg {
+	block-size: 2ex;
+	inline-size: auto;
+	flex: none;
+}
+
+strong {
+	font-weight: var(--font-extra-bold);
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	width: 10%;
+	margin-block: var(--space-m-l);
+	margin-inline-start: 0;
+	background-color: var(--color-bg-accent-2);
+}
+
+[role="list"] {
+	padding: 0;
+}
+
+/* Base interactive elements */
+
+a {
+	color: currentcolor;
+	text-decoration-thickness: 0.08em;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+:focus-visible {
+	outline: 3px solid;
+	outline-offset: 0.3ch;
+}
+
+main:focus {
+	outline: none;
+}
+
+/* Base selection styles that invert whatever colours are rendered */
+::selection {
+	background-color: var(--color-text);
+	color: var(--color-bg);
+}
+
+.preload-transitions * {
+	transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	::after,
+	::before {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+	}
+}
