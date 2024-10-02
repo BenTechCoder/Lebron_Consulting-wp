@@ -87,7 +87,7 @@ svg {
 }
 
 strong {
-	font-weight: var(--font-extra-bold);
+	font-weight: bolder;
 }
 
 hr {

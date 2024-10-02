@@ -28,7 +28,7 @@ get_header();
 	// Optionally, those could of course go directly into the query,
 	// especially, if you have no others but post type.
 	$args = array(
-		'post_type'      => 'service',
+		'post_type'      => 'services',
 		'posts_per_page' => 3,
 	// Several more arguments could go here. Last one without a comma.
 	);

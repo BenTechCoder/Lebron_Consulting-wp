@@ -9,30 +9,19 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="">
 
-	<header class="entry-header">
-		<?php
-		if ( ! is_front_page() ) {
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		} else {
-			the_title( '<h2 class="entry-title">', '</h2>' );
-		}
-		?>
+	<header class="bg-dark text-light hero-pattern py-8">
+	<div class="wrapper center">	
+		<h1><?php echo get_the_title();?></h1>
+	</div>
 	</header><!-- .entry-header -->
 
 	<?php _test_1_post_thumbnail(); ?>
 
-	<div <?php _test_1_content_class( 'entry-content' ); ?>>
+	<div class="flow wrapper text-start center py-8" style="--wrapper-max-width:70rem">
 		<?php
 		the_content();
-
-		wp_link_pages(
-			array(
-				'before' => '<div>' . __( 'Pages:', 'Lebron_Consulting' ),
-				'after'  => '</div>',
-			)
-		);
 		?>
 	</div><!-- .entry-content -->
 

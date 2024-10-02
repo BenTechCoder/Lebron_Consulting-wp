@@ -1,7 +1,6 @@
 .center {
     box-sizing: content-box;
     margin-inline: auto;
-    text-align: center;
     max-inline-size: var(--measure, none);
     display:flex;
     flex-direction: column;
