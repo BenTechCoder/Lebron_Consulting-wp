@@ -11,46 +11,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<?php if ( ! is_page() ) : ?>
-			<div class="entry-meta">
-				<?php _test_1_entry_meta(); ?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
+<header class="bg-dark text-light hero-pattern hero-normal py-8">
+	<div class="wrapper stack z-10">	
+		<h1><?php echo get_the_title();?></h1>
+		<div class="flex gap-2">
+			<a href="/contact" class="btn bg-primary text-light">Contact</a>
+			<a href="<?php echo get_post_type_archive_link(get_post_type()) ?>" class="btn bg-light text-dark">See all <?php echo get_post_type() ?></a>
+		</div>
+	</div>
 	<?php _test_1_post_thumbnail(); ?>
-
-	<div <?php _test_1_content_class( 'entry-content' ); ?>>
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers. */
-					__( 'Continue reading<span class="sr-only"> "%s"</span>', 'Lebron_Consulting' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div>' . __( 'Pages:', 'Lebron_Consulting' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php _test_1_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-
+	</header><!-- .entry-header -->
 </article><!-- #post-${ID} -->

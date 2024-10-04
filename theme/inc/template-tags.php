@@ -196,9 +196,7 @@ if ( ! function_exists( '_test_1_post_thumbnail' ) ) :
 		if ( is_singular() ) :
 			?>
 
-			<figure>
 				<?php the_post_thumbnail(); ?>
-			</figure><!-- .post-thumbnail -->
 
 			<?php
 		else :

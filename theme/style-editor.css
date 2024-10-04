@@ -1067,6 +1067,23 @@ main:focus {
   background-size: contain;
 }
 
+.hero-normal {
+  display: grid;
+  align-items: center;
+}
+
+.hero-normal > * {
+  grid-row: 1;
+  grid-column: 1;
+  max-height: max(50vh, 25rem);
+}
+
+.hero-normal img {
+  filter: brightness(0.4);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -1230,6 +1247,10 @@ main:focus {
   visibility: visible;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .block {
   display: block;
 }
@@ -1350,6 +1371,11 @@ main:focus {
 
 .text-start {
   text-align: start;
+}
+
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
 .text-light {
