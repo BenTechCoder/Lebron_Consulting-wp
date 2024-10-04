@@ -19,7 +19,7 @@ get_header();
 					<h1><?php echo strtoupper(get_post_type())?></h1>
 				</div>
 			</header><!-- .page-header -->
-<section class="py-8 card-grid">
+<section class="py-10 card-grid">
 	
 				<?php
 				// Start the Loop.

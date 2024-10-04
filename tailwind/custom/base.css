@@ -29,7 +29,7 @@ body {
 	--size-step-6: clamp(2.6127rem, 1.6815rem + 4.6563vw, 5.6102rem);
 	--size-step-7: clamp(3.1353rem, 1.786rem + 6.7467vw, 7.4784rem);
 	--size-step-8: clamp(3.7623rem, 1.8341rem + 9.641vw, 9.9688rem);
-  }
+}
 
 h1 {
 	font-size: var(--size-step-5);

@@ -6,7 +6,8 @@
 	text-align: center;
 }
 
-.contact input, textarea {
+.contact input,
+textarea {
 	@apply p-2;
 	@apply rounded-md;
 }

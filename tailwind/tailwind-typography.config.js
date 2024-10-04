@@ -104,7 +104,7 @@ module.exports = {
 				 * your `./theme/functions.php file, you will need to replace
 				 * `prose-neutral` with `prose-Lebron_Consulting`.
 				 */
-				'Lebron_Consulting': {
+				Lebron_Consulting: {
 					css: {
 						'--tw-prose-body': theme('colors.dark'),
 						'--tw-prose-headings': theme('colors.dark'),

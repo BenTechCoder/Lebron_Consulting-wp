@@ -11,6 +11,3 @@
 .stack > * + * {
 	margin-block-start: var(--space, 1.5em);
 }
-
-
-

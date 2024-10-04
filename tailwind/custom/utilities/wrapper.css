@@ -1,16 +1,17 @@
-
 /**
  * WRAPPER
  * Sets a max width, adds a consistent gutter and horizontally
  * centers the contents
  */
- .wrapper {
-    width: 90vw;
-    width: clamp(var(--wrapper-min-width,16rem), 95vw, var(--wrapper-max-width,95rem));
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  
-  
+.wrapper {
+	width: 90vw;
+	width: clamp(
+		var(--wrapper-min-width, 16rem),
+		95vw,
+		var(--wrapper-max-width, 95rem)
+	);
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}

@@ -12,40 +12,41 @@ module.exports = {
 	],
 	theme: {
 		// Extend the default Tailwind theme.
-		extend: {fontFamily: {
-			display: [
-				'Redhat',
-				'Segoe UI',
-				'Roboto',
-				'Helvetica',
-				'Arial',
-				'sans-serif',
-				'Apple Color Emoji',
-				'Segoe UI Emoji',
-				'Segoe UI Symbol',
-			],
-			body: [
-				'Open Sans',
-				'Segoe UI',
-				'Roboto',
-				'Helvetica',
-				'Arial',
-				'sans-serif',
-				'Apple Color Emoji',
-				'Segoe UI Emoji',
-				'Segoe UI Symbol',
-			],
-		},
-		container: {
-			padding: {
-			  DEFAULT: "1rem",
-			  sm: "1rem",
-			  lg: "1.5rem",
-			  xl: "1.5rem",
-			  "2xl": "2rem",
+		extend: {
+			fontFamily: {
+				display: [
+					'Redhat',
+					'Segoe UI',
+					'Roboto',
+					'Helvetica',
+					'Arial',
+					'sans-serif',
+					'Apple Color Emoji',
+					'Segoe UI Emoji',
+					'Segoe UI Symbol',
+				],
+				body: [
+					'Open Sans',
+					'Segoe UI',
+					'Roboto',
+					'Helvetica',
+					'Arial',
+					'sans-serif',
+					'Apple Color Emoji',
+					'Segoe UI Emoji',
+					'Segoe UI Symbol',
+				],
 			},
-		}
-	}
+			container: {
+				padding: {
+					DEFAULT: '1rem',
+					sm: '1rem',
+					lg: '1.5rem',
+					xl: '1.5rem',
+					'2xl': '2rem',
+				},
+			},
+		},
 	},
 	corePlugins: {
 		// Disable Preflight base styles in builds targeting the editor.

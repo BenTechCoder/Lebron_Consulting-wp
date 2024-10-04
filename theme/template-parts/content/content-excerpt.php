@@ -13,7 +13,7 @@
 
 	<?php _test_1_post_thumbnail(); ?>
 
-	<header class="<?php if (get_post_type() === 'services') echo "bg-dark text-light"; ?>">
+	<header class="<?php if (get_post_type() === 'services') echo "bg-dark text-light p-1"; ?>">
 		<?php
 		the_title( sprintf( '<h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 		?>
