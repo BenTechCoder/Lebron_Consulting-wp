@@ -13,7 +13,7 @@
 
 	<header class="bg-dark text-light hero-pattern py-8">
 	<div class="wrapper center">	
-		<h1><?php echo get_the_title();?></h1>
+		<h1><?php echo get_the_title(); ?></h1>
 	</div>
 	</header><!-- .entry-header -->
 
