@@ -16,6 +16,7 @@ textarea {
 .contact [type="submit"] {
 	width: 100%;
 	@apply bg-secondary;
+	color: theme(colors.light);
 }
 
 @media (min-width: theme("screens.md")) {
