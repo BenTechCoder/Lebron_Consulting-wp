@@ -198,3 +198,12 @@ require get_template_directory() . '/inc/template-functions.php';
 
 add_post_type_support('services', 'excerpt');
 add_post_type_support('projects', 'excerpt');
+
+// Remove jQuery
+function remove_jquery() {
+    if (!is_admin()) {
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', false);
+    }
+}
+add_action('init', 'remove_jquery');
