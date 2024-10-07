@@ -10,6 +10,7 @@
 textarea {
 	@apply p-2;
 	@apply rounded-md;
+	color: theme(colors.dark);
 }
 
 .contact [type="submit"] {
