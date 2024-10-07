@@ -22,3 +22,11 @@
 	<?php _test_1_post_thumbnail(); ?>
 	</header><!-- .entry-header -->
 </article><!-- #post-${ID} -->
+
+<article class="flow prose wrapper text-start py-8" style="--wrapper-max-width:70rem">
+		<?php
+		the_content();
+		?>
+</div><!-- .entry-content -->
+
+<?php get_template_part( 'template-parts/components/contact-form' ); ?>

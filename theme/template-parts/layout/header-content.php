@@ -11,7 +11,7 @@
 
 <header id="masthead" class="navbar wrapper | p-2 bg-light">
 
-<a href="/"><img src="http://lc-wp.local/wp-content/uploads/2024/09/nav-logo.png" /></a>
+<a href="/"><img src=<?php echo wp_get_attachment_image_src( 58, 'large' )[0]; ?> alt="Lebron Consulting Logo"></a>
 
 	<nav id="site-navigation" aria-label="<?php esc_attr_e( 'Main Navigation', 'Lebron_Consulting' ); ?>">
 		<!-- <button class="md:hidden" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'Lebron_Consulting' ); ?></button> -->

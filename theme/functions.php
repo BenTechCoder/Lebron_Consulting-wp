@@ -195,3 +195,6 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+add_post_type_support('services', 'excerpt');
+add_post_type_support('projects', 'excerpt');

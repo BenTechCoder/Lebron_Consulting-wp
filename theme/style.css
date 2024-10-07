@@ -1422,7 +1422,7 @@ main:focus {
 
 .card a:after {
   bottom: 0;
-  content: '';
+  content: "";
   left: 0;
   position: absolute;
   right: 0;
@@ -1449,7 +1449,8 @@ main:focus {
   text-align: center;
 }
 
-.contact input, textarea {
+.contact input,
+textarea {
   padding: 0.5rem;
   border-radius: 0.375rem;
 }
@@ -1580,7 +1581,13 @@ main:focus {
 
 .reel::-webkit-scrollbar-thumb {
   background-color: #7047EB;
-  background-image: linear-gradient(#7047EB 0, #7047EB 0.25rem, #333333 0.25rem, #333333 0.75rem, #7047EB 0.75rem);
+  background-image: linear-gradient(
+		#7047EB 0,
+		#7047EB 0.25rem,
+		#333333 0.25rem,
+		#333333 0.75rem,
+		#7047EB 0.75rem
+	);
 }
 
 .reel > * {
@@ -1854,7 +1861,7 @@ main:focus {
   box-sizing: content-box;
   margin-inline: auto;
   max-inline-size: var(--measure, none);
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1938,7 +1945,11 @@ main:focus {
 
 .wrapper {
   width: 90vw;
-  width: clamp(var(--wrapper-min-width,16rem), 95vw, var(--wrapper-max-width,95rem));
+  width: clamp(
+		var(--wrapper-min-width, 16rem),
+		95vw,
+		var(--wrapper-max-width, 95rem)
+	);
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
