@@ -7,6 +7,7 @@
  * @package Lebron_Consulting
  */
 
+
 if ( ! defined( '_TEST_1_VERSION' ) ) {
 	/*
 	 * Set the theme’s version number.
@@ -151,6 +152,7 @@ function _test_1_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	if ( !is_admin() ) wp_deregister_script('jquery');
 }
 add_action( 'wp_enqueue_scripts', '_test_1_scripts' );
 
@@ -200,10 +202,4 @@ add_post_type_support('services', 'excerpt');
 add_post_type_support('projects', 'excerpt');
 
 // Remove jQuery
-function remove_jquery() {
-    if (!is_admin()) {
-        wp_deregister_script('jquery');
-        wp_register_script('jquery', false);
-    }
-}
-add_action('init', 'remove_jquery');
+	
