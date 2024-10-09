@@ -3,7 +3,7 @@
 	grid-template-columns: 1fr;
 	align-items: center;
 	gap: 1.5em;
-	text-align: center;
+	--stack-space: theme(space.4);
 }
 
 .contact input,
@@ -32,7 +32,7 @@ textarea {
 	}
 
 	.contact [type="submit"] {
-		grid-column: 1;
-		grid-row: 1;
+		grid-column: 2;
+		grid-row: 2;
 	}
 }
