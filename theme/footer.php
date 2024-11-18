@@ -20,5 +20,5 @@
 <?php wp_footer(); ?>
 
 </body>
-<script async defer data-website-id="3720ec8b-6e7b-4546-8bbe-fe9b91fba2d3" src="https://ben-umami.cap.benjaminlebron.com/umami.js"></script>
+<script defer src="https://ben-umami.cap.benjaminlebron.com/script.js" data-website-id="3720ec8b-6e7b-4546-8bbe-fe9b91fba2d3"></script>
 </html>
