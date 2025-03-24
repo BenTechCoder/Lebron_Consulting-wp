@@ -6,7 +6,7 @@
 		</div>
    
 	<div class="center text-left"> 
-		<form action="https://formsubmit.co/ben@lebronconsulting.tech" method="POST">
+		<form action="https://formsubmit.co/a56bbc80f8a25e9573b084e94488a8ff" method="POST">
 			<div class="flow">
 				<div class="stack">
 					<label for="name">Name</label>
