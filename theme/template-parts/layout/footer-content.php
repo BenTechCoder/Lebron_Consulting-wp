@@ -18,12 +18,12 @@
 	<?php endif; ?>
 
 	<?php if ( has_nav_menu( 'menu-2' ) ) : ?>
-		<nav aria-label="<?php esc_attr_e( 'Footer Menu', 'Lebron_Consulting' ); ?>">
+		<nav aria-label="<?php esc_attr_e( 'Footer Menu', 'Lebron_Consulting' ); ?>" class="center font-display">
 			<?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-2',
-					'menu_class'     => 'footer-menu',
+					'menu_class'     => '',
 					'depth'          => 1,
 				)
 			);
