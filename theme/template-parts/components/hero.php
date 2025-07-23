@@ -1,14 +1,14 @@
-<section class="full-bleed overflow-hidden p-0">
-<!-- <div class="shade bg-primary/50"></div> -->
-    <!-- class="bg-cover bg-[url('http://lc-wp.local/wp-content/uploads/2024/08/Designer.png')]" -->
-<div class="pt-10 bg-primary/50 text-light">
-       <div class="hero">
-           <div class="hero__inner text-center center">
-                <p>Good Websites for your small business</p>
+<section class="overflow-hidden p-0">
+    <div class="bg-primary hero-pattern text-light py-14">
+        <div class="hero stack wrapper">
+            <div class="hero__inner">
+                <p>Professional Websites for your small business</p>
                 <h1>WEBSITES THAT WORK AS HARD AS YOU DO</h1>
-           </div>
-           <img class="hero--img mobile-hero--img" src=<?php echo wp_get_attachment_image_src( 38, 'full' )[0]; ?> alt="Illustration of tradesmen working together build a website" />
-       </div>
+            </div>
+            <div class="flex gap-2">
+                <a href="/services" class="btn border-2 bg-dark">See Services</a>
+                <a href="/contact" class="btn bg-light text-dark">Contact</a>
+            </div>
+        </div>
     </div>
-</div>
 </section>
