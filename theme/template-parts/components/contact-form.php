@@ -5,11 +5,7 @@
 			<p>Send us a message, we're always ready to make awesome websites.</p>
 		</div>
 
-		<div class="center text-left">
-			<?php echo do_shortcode('[contact-form-7 id="96b13aa" title="Contact form 1"]'); ?>
-		</div>
-		<!-- TODO: ADD EMAIL AND PHONE NUMBER -->
-		<ul class="center flow">
+		<ul class="center flow font-display">
 			<li><a href="mailto:contact@lebronconsulting.tech">contact@lebronconsulting.tech</a></li>
 			<li><a href="tel:9197061910">(919)-706-1910</a></li>
 		</ul>
