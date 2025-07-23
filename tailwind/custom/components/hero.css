@@ -1,5 +1,5 @@
 .hero h1 {
-	font-size: var(--size-step-5);
+	font-size: var(--size-step-6);
 }
 
 .hero-pattern {
@@ -24,7 +24,7 @@
 	object-fit: cover;
 }
 
-@media (min-width: theme(screens.lg)) {
+@media (min-width: theme(screens.2xl)) {
 	.hero h1 {
 		font-size: var(--size-step-7);
 	}
